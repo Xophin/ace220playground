@@ -2,23 +2,28 @@
 <html>
 	<head>
 		<title>Pepper Pepper Pepper</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<div>
-			<ul class="horizontal">
-				<li><a href="About Me">About Me</a></li>
-				<li><a href="Skills">Skills</a></li>
-				<li><a href="Hobbies">Off-Hours</a></li>
-				<li><a href="Contact Me">Contact Me</a></li>
-			</ul>
+		<div class="menu">
+				<div class="menuitem"><a href="bio">About Me</a></div>
+				<div class="menuitem"><a href="Skills">Skills</a></div>
+				<div class="menuitem"><a href="Hobbies">Off-Hours</a></div>
+				<div class="menuitem"><a href="Contact Me">Contact Me</a></div>
 		</div>
-		<div>
-			<a id="About Me"><h2>About Me</h2></a>
-			<article> TODO: about me</article>
-			<span>An inline tag</span>
+		<div class="section1" id="intro">
+			<article>A software engineering student with a background in customer service and in-house it.
+			</article>
+				<img src="images/smallbadheadshotsmaller.jpg" alt="white woman with short red hair in purple zip up jacket with black shirt underneath standing against a plain off white background" style="width:254px;height:257px;">
+			
 		</div>
-		<div>
-			<a id="Skills"><h2>Skills</h2></a>
+		<div class="section2">
+			<h2 id="bio">About Me</h2>
+			<article> TODO: about me
+			</article>
+		</div>
+		<div class="section1">
+			<h2 id="Skills">Skills</h2>
 			<article>TODO: Professional blurb + Skill list</article>
 			<ul class="verticle">
 				<li>Walgreens</li>
@@ -34,13 +39,30 @@
 						<li>I research new comapanies or software when we are deciding to switch what we use.</li>
 			</ul>
 		</div>
-		<div>
-			<h2><a id="Hobbies">Off-Hours</a></h2>
-			<article>In my free time I enjoy dabbling with sketching pencils, pixel art, and occasionally digital art. I also enjoy swapping recipes with my friends, the occasional get together for board games of various stripes, and video games.</article>
+		<div class="section2">
+			<h2 id="Hobbies">Off-Hours</h2>
+			<picture>
+				<img src="images/colored-pencils-g9c5bec6d2_1920" alt="sharpened colored pencils on a white background with tips facing up">
+			</picture>
+			<article>In my free time I enjoy dabbling with sketching pencils, pixel art, and occasionally digital art. I also enjoy swapping recipes with my friends, the occasional get together for board games of various stripes, and video games. Currently I am learning to play the piano as well. I generally enjoy many of my hobbies (video games and drawing) while watching documentaries or youtube channels like Technology Connections
+			or Kurzgesagt.</article>
 		</div>
-		<div>
-			<h2><a id="Contact Me">Contact Me</a></h2>
-			<form>TODO: contact form</form>
+		<div class="section1">
+			<h2 id="Contact Me">Contact Me</h2>
+			<form>
+				<label for="fname">First Name:</label><br>
+				<input type="text" id="fname" name="Fname" value="First Name Here"><br>
+				<label for="lnname">Last Name:</label><br>
+				<input type="text" id="lname" name="Lname" value="Last Name Here"><br>
+				<label for="semail">Email Address:</label><br>
+				<input type="email" id="semail" name="semail" value="youremail@here.com"><br>
+				<label for="subject">Email Subject:</label><br>
+				<input type="text" id="subject" name="Subject" value="Subject line Here"><br>
+				<label for="message">Email Message:</label>
+				<input type="text" id="message" name="Message" value="Type your message here."><br><br>
+			</form>
+			<article>Sorry! This portion of the website isn't working yet!
+			</article>
 		</div>
 	</body>
 </html>
